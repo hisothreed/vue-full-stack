@@ -20,6 +20,9 @@ const config = merge(base, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
     }),
+    new webpack.DefinePlugin({
+			"process.env.VUE_ENV": "'client'"
+		}),
     // generate output HTML
     new HTMLPlugin({
       template: 'src/index.html'

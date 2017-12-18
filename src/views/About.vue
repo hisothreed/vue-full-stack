@@ -8,6 +8,13 @@ import HelloComponent from './../components/HelloComponent'
 export default {
     components: {
         HelloComponent
-    }
+    },
+    created() {
+        console.log('called');
+        
+    },
+    // title() {
+    //     return 'about'
+    // }
 }
 </script>

@@ -3,3 +3,10 @@
     <router-view class="view"></router-view>
   </div>
 </template>
+<script>
+export default {
+  title(){
+      return 'Parent'
+  }
+}
+</script>

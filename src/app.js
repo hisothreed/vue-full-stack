@@ -7,9 +7,10 @@ import router from './router/router'
 
 
 
-export function createApp(context) {
+export function createApp(ssrContext) {
     const app = new Vue({
         router,
+        ssrContext,
         render: h => h(App)
     })
     return { app, router }
